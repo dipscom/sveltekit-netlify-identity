@@ -6,8 +6,27 @@
 		<link rel="icon" href="%svelte.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%svelte.head%
+		<style>
+			body,
+			form {
+				align-items: flex-start;
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+			}
+
+			form {
+				gap: 1rem;
+			}
+		
+			h1,
+			h2,
+			p {
+				margin: 0;
+			}
+		</style>
 	</head>
 	<body>
-		<div>%svelte.body%</div>
+		%svelte.body%
 	</body>
 </html>
